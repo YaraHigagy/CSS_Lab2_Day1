@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day1 Task1</title>
+  <style>
+    .mainHead {
+      background-color: rgb(240, 240, 240);
+      padding: 6px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .container{
+      display: flex;
+      gap: 6px;
+      padding: 6px;
+    }
+    .childItem{
+      border: solid;
+      flex: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .textItem{
+      text-align: center;
+    }
+    footer{
+      background-color: rgb(240, 240, 240);
+      padding: 6px;
+      text-align: center;
+    }
+    @media (max-width:413.99999999px){
+      .mainHead{
+        flex-wrap: wrap;
+      }
+      .container{
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 style="font-family: Tahoma; font-weight: 100; margin-bottom: 3px;">
+    Task_One
+  </h1>
+  <hr>
+  <header class="mainHead">
+    <div>Home</div>
+    <div>About</div>
+    <div>Services</div>
+    <div>Contact</div>
+  </header>
+  <section class="container">
+    <div class="childItem">
+      <p class="textItem">This is a flex item.</p>
+      <footer>Footer</footer>
+    </div>
+    <div class="childItem">
+      <p class="textItem">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, quas
+        expedita beatae possimus, eveniet commodi veritatis veniam omnis
+        dignissimos esse unde magnam impedit! Harum illum ipsam, dolorem rem iste
+        quos?
+      </p>
+      <footer>Footer</footer>
+    </div>
+  </section>
+</body>
+</html>

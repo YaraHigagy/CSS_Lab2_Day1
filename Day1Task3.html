@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day1 Task3</title>
+  <style>
+    section{
+      color: white;
+      text-align: center;
+      display: grid;
+      grid-template-areas: 
+      "head head head head"
+      "nav1 main main nav2"
+      "nav1 main main nav2"
+      "foot foot foot foot"
+      ;
+    }
+    header{
+      background-color: rgb(111, 129, 236);
+      grid-area: head;
+      height: 60px;
+      margin-bottom: 3px;
+      display: inline-grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .sidenav{
+      background-color: rgb(207, 131, 68);
+      height: 180px;
+      grid-area: nav1;
+      padding-top: 20px;
+    }
+    main{
+      background-color: rgb(149, 212, 90);
+      grid-area: main;
+      margin-left: 2px;
+      margin-right: 2px;
+      padding-top: 20px;
+    }
+    .sidebar{
+      background-color: rgb(207, 131, 68);
+      grid-area: nav2;
+      padding-top: 20px;
+    }
+    footer{
+      background-color: rgb(111, 129, 236);
+      grid-area: foot;
+      height: 60px;
+      margin-top: 3px;
+      display: inline-grid;
+      justify-content: center;
+      align-items: center;
+    }
+    @media (max-width:413.99999999px){
+      section{
+        grid-template-areas: 
+          "head head head head"
+          "nav1 nav1 nav1 nav1"
+          "main main main main"
+          "nav2 nav2 nav2 nav2"
+          "foot foot foot foot"
+          ;
+      }
+      .sidenav{
+      background-color: rgb(207, 131, 68);
+      height: 20px;
+      grid-area: nav1;
+      padding-bottom: 20px;
+      margin-bottom: 2px;
+    }
+    main{
+      background-color: rgb(149, 212, 90);
+      grid-area: main;
+      margin: 0;
+      padding-bottom: 20px;
+    }
+    .sidebar{
+      background-color: rgb(207, 131, 68);
+      grid-area: nav2;
+      padding-bottom: 20px;
+      margin-top: 2px;
+    }
+    }
+  </style>
+</head>
+<body>
+  <h1 style="font-family: Tahoma; font-weight: 100; margin-bottom: 3px;">
+    Task_Three
+  </h1>
+  <hr>
+  <section>
+    <header> HEADER</header>
+    <nav class="sidenav">SIDENAV</nav>
+    <main>MAIN CONTENT</main>
+    <nav class="sidebar">SIDEBAR</nav>
+    <footer>FOOTER</footer>
+  </section>
+</body>
+</html>
